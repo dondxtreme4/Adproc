@@ -1,0 +1,107 @@
+public abstract class PipesAbstract {
+    private String type;
+    private int grade;
+    private int colour;
+    private boolean innerInsulation;
+    private boolean outerReinforcement;
+    private boolean chemicalResistance;
+    
+
+   protected PipesAbstract(String type, int grade ,int colour , boolean innerInsulation,boolean outerReinforcement,boolean chemicalResistance){ 
+        this.type =type;
+        this.grade = grade;
+        this.colour = colour;
+        this.innerInsulation= innerInsulation;
+        this.outerReinforcement= outerReinforcement;
+        this.chemicalResistance= chemicalResistance;
+        
+}
+   public String getType(){
+       return type;
+       
+   }
+   
+   public void changeType(String newType){
+       type = newType;
+   
+   }
+
+   public int getGrade(){
+       return grade;
+   
+   }
+   
+   public void changeGrade(int newGrade){
+       grade= newGrade;
+   
+   }
+       
+   public int getColour(){
+       return colour;
+   
+   }
+   
+   public void changeColour(int newColour){
+       colour = newColour;
+   
+   }
+
+   public boolean getInnerInsulation(){
+       return innerInsulation;
+   
+   }
+   
+   public void changeInnerInsulation(boolean newInnerInsulation){
+       innerInsulation= newInnerInsulation;
+   
+   }
+
+   public boolean getOuterReinforcement(){
+       return outerReinforcement;
+   }
+   
+   public void changeOuterReinforcement(boolean newOuterReinforcement){
+       outerReinforcement = newOuterReinforcement;
+   
+   }
+   
+   public boolean getChemicalResistance(){
+       return chemicalResistance;
+   
+   }
+   
+   public void changeChemicalResistance(boolean newChemicalResistance){
+       chemicalResistance = newChemicalResistance;
+   
+   }
+
+    /**
+     *
+     * @param grade
+     * @param colour
+     * @param innerInsulation
+     * @param outerReinforcement
+     * @param chemicalResistance
+     */
+    public void typeLocator(int grade, int colour ,boolean innerInsulation, boolean outerReinforcement, boolean chemicalResistance){
+        if 
+           ((grade>= 1 && (grade <=3),( 0 );, (false),(false),(true/false));
+           return newTypeOne;
+        else
+           ((grade>=2 && grade<=4),( 1),( false),( false ),(true/false));
+           return TypeTwo;
+        else
+           ((grade>=2 && grade<=5),( 2),(false),(false),(true/false));
+           return TypeThree;
+        else
+           ((grade>=2 && grade<= 5),(2),(true),(false),( true/false));
+           return TypeFour;
+        else
+           ((grade>=3 && grade<=5),(2),(true),( true),( true/false));
+           return TypeFive;
+        else
+           return "Sorry we do not sell such Pipes";
+        
+    }
+
+}
